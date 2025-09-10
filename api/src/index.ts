@@ -18,7 +18,7 @@ app.post('/chat', async (req, res) => {
   const { message } = req.body;
   try {
     const completion = await openai.chat.completions.create({
-      model: 'gpt-4o',
+      model: 'gpt-4.1-nano',
       messages: [
         {
           role: 'system',
@@ -27,7 +27,7 @@ app.post('/chat', async (req, res) => {
 Basic Info:
 - Name: Noah Conn.
 - Title: Junior Software Developer
-- Technical Skills: TypeScript, React, Node.js, AWS, Python, SQL, DevOps, AI/ML
+- Technical Skills: TypeScript, React, Java, Node.js, AWS, Python, SQL, DevOps, AI/ML
 - Soft Skills: Problem-solving, teamwork, communication, adaptability
 - Other Skills: Fluent in Spanish
 - Experience: 2+ years in full-stack and cloud development
